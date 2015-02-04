@@ -23,9 +23,14 @@ $(function() {
 
 	$('#fullpage').fadeIn(2400, function() {
 		
-		$('span').show(3000, function() {
-			$('.arrow').fadeIn(600, function() {});
+		$('span').typed({
+			strings: [" working code."],
+			contentType: 'html',
+			typeSpeed: 45
 		});
+		setTimeout(function() {
+			$('.arrow').fadeIn(600, function() {});
+		}, 1500);
 	});
 
 	// $(".bottom-right").hover(function() {
@@ -78,6 +83,11 @@ $(function() {
 			scrollTop: $( $(this).attr('href') ).offset().top
 		}, 500);
 		return false;
+	});
+
+
+	$('.ihave').hover(function() {
+		
 	});
 
 });

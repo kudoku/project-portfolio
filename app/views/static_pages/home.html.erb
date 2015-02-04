@@ -4,7 +4,7 @@
 
 		<div class="tagline">
 		  <h1>JOON PARK</h1> 
-		  <h2>confidence. passion.<span>&nbsp;working&nbsp;</span><span class="span1">code.</span></h2>
+		  <h2>confidence. passion.<span>&nbsp;</span></h2>
 		</div>
 
 	<div class="arrow">
@@ -13,14 +13,28 @@
 
 </div>
 
+
+
 <div id="more">
-	<p>This is more stuff</p>
+	<div class="arrow-up">
+		<%= link_to '', '#fullpage', class: "fa fa-angle-double-up" %>
+	</div>
+
+	
 	<div id="masonry_container">
 	  <div class="item">1st 300</div>
-	  <div class="item medium">2nd 600</div>
-	  <div class="item ihave">3rd 300</div>
+	  <%= link_to '', "https://damp-springs-2575.herokuapp.com/", target: "_blank", class: "item medium ihave greyscale" %>
+	  
+	  <div class="item about">3rd 300</div>
 	  <div class="item medium">4th 600</div>
-	  <div class="item large"><h2 class="top-center">Contact</h2><div class="contact-row"><%= link_to '', "https://www.linkedin.com/in/parkjoonw", class: "fa fa-linkedin fa-2x", target: "_blank" %><%= link_to '', "https://github.com/kudoku", class: "fa fa-github fa-2x", target: "_blank" %></i><i class="fa fa-envelope fa-2x"></i></div></div>
+	  <div class="item large">
+		  <h2 class="top-center">Contact</h2>
+		  
+		  <ul class="contact-row"><li><%= link_to '', "https://www.linkedin.com/in/parkjoonw", class: "fa fa-linkedin fa-2x", target: "_blank" %></li>
+	  	<li><%= link_to '', "https://github.com/kudoku", class: "fa fa-github fa-2x", target: "_blank" %></i></li>
+	  	<li><i class="fa fa-envelope fa-2x"></i></li></ul>
+	  	
+	  </div>
 	</div>
 </div>
 
