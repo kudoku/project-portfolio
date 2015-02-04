@@ -189,6 +189,14 @@ img.desaturate {
 	filter: grayscale(100%);
 }
 
+.about {
+	background-image: image-url('violin2.jpg');
+	background-origin: padding-box;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 img {
 	background-origin: padding-box;
 	background-position: center center;
