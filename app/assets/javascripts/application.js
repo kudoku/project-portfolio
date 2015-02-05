@@ -15,7 +15,7 @@
 //= require jquery-ui
 //= require isotope.pkgd.js
 //= require typed.js
-//= require turbolinks
+
 //= require_tree .
 
 
@@ -85,9 +85,16 @@ $(function() {
 		return false;
 	});
 
+	$('.arrow-up a').click(function() {
+		console.log('scrollplz');
+		$('body').scrollTo('#fullpage',{duration:'slow', offsetTop : '50'});
+	});
+
+
+
 
 	$('.ihave').hover(function() {
-		
+
 	});
 
 });
