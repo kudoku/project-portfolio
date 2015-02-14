@@ -23,7 +23,7 @@
 $(function() {
 
 	// fullpage animations
-	$('#landing').fadeIn(2400, function() {		
+	$('#section0').fadeIn(2400, function() {		
 		$('.typed').typed({
 			strings: [" working code."],
 			contentType: 'html',
@@ -99,7 +99,7 @@ $(function() {
 	// });
 
 	$('#fullpage').fullpage({
-    anchors: ['section1', 'section2']
+    anchors: ['landing', 'more']
 	});
 
 	// $('.arrow-up a').click(function() {
