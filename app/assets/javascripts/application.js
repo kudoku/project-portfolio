@@ -23,7 +23,7 @@
 $(function() {
 
 	// fullpage animations
-	$('#fullpage').fadeIn(2400, function() {		
+	$('#landing').fadeIn(2400, function() {		
 		$('.typed').typed({
 			strings: [" working code."],
 			contentType: 'html',
@@ -90,12 +90,16 @@ $(function() {
 
 
 	// smooth scroll
-	$('.arrow a').click(function() {
-		$("body").css("overflow", "auto");
-		$('html, body').animate({
-			scrollTop: $( $(this).attr('href') ).offset().top
-		}, 500);
-		return false;
+	// $('.arrow a').click(function() {
+	// 	$("body").css("overflow", "auto");
+	// 	$('html, body').animate({
+	// 		scrollTop: $( $(this).attr('href') ).offset().top
+	// 	}, 500);
+	// 	return false;
+	// });
+
+	$('#fullpage').fullpage({
+    anchors: ['section1', 'section2']
 	});
 
 	// $('.arrow-up a').click(function() {
