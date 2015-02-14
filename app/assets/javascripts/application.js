@@ -48,6 +48,8 @@ $(function() {
 	// 	$(this).width();
 	// });
 
+
+
 	
 
 	// $(".bottom-right").hover(function() {
@@ -83,46 +85,37 @@ $(function() {
 
 
 	$('.bio').on("click", function() {
-		console.log(this);
 		$(this).toggleClass('is-expanded');
 		$masonry_container.isotope('layout');
+
+		$('.skills').toggle();
+
+	});
+
+	$('.bio').mouseenter(function() {
+		$("#name").append("I'm Joon");
+	}).mouseleave(function() {
+		$("#name").empty();
 	});
 
 
-	// smooth scroll
-	// $('.arrow a').click(function() {
-	// 	$("body").css("overflow", "auto");
-	// 	$('html, body').animate({
-	// 		scrollTop: $( $(this).attr('href') ).offset().top
-	// 	}, 500);
-	// 	return false;
-	// });
 
 	$('#fullpage').fullpage({
-    anchors: ['landing', 'more']
+    anchors: ['landing', 'more'],
+    scrollBar: true
 	});
 
-	// $('.arrow-up a').click(function() {
-	// 	console.log('scrollplz');
-	// 	$('body').scrollTo('#fullpage',{duration:'slow', offsetTop : '50'});
-	// });
 
 
 
 
-	$("div.item.medium.about-me").hover(function(){
-    $(this).animate({ height: "350px" }, {duration: 600 }, {queue: false});
-	}, function() {
-    $(this).animate({ height: "300px" }, {duration: 600 }, {queue: false});
-	});
 
-	// $('div.item.medium.about-me').hover(function() {
-	// 	// console.log('about hover');
-	// 	// console.log(this);
-		
-	// 	$( "div.item.medium.about-me" ).animate({ "height": "105%" }, "slow", {queue: false} );
+	// $("div.item.medium.about-me").hover(function(){
+ //    $(this).animate({ height: "350px" }, {duration: 600 }, {queue: false});
 	// }, function() {
-	// 	$( "div.item.medium.about-me" ).animate({ "height": "100%" }, "slow", {queue: false} );
+ //    $(this).animate({ height: "300px" }, {duration: 600 }, {queue: false});
 	// });
+
+
 
 });
