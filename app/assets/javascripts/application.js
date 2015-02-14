@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require isotope.pkgd.js
+//= require jquery.fullPage.min.js
 //= require typed.js
 
 //= require_tree .
